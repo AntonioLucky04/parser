@@ -1,0 +1,107 @@
+2026-02-19 15:11:11 - ________________________________________________
+2026-02-19 15:11:11 - *****СТАРТ программы 'Парсер цен СБИС и Контур'
+2026-02-19 15:11:11 - ......Прочитан конфигурационный файл E:\Программы\Pytnon projects\Parser1\stat\config.toml
+2026-02-19 15:11:11 - ......Ключи в конфиге: ['regions_sbis', 'regions_kontur', 'urls', 'paths', 'telegram']
+2026-02-19 15:11:11 - ......Регионов СБИС в конфиге: 90
+2026-02-19 15:11:11 - ......Регионов Контур в конфиге: 90
+2026-02-19 15:11:11 - Start polling
+2026-02-19 15:11:12 - Run polling for bot @pazrssrbot id=8579516206 - '@Parbot1'
+2026-02-19 15:11:23 - Update id=192499659 is handled. Duration 671 ms by bot id=8579516206
+2026-02-19 15:11:34 - ......Загружено 90 регионов для СБИС из конфига
+2026-02-19 15:12:01 - Update id=192499661 is handled. Duration 14921 ms by bot id=8579516206
+2026-02-19 15:12:01 - ......ОТЛАДКА: cancel_flag = True
+2026-02-19 15:12:01 - ......Файл E:\Программы\Pytnon projects\Parser1\stat\sbis_price_на_19.02.26.xlsx создан, отправляем в чат
+2026-02-19 15:12:01 - ......Парсинг был отменен, отправляем неполный файл
+2026-02-19 15:12:01 - ......Начинаем отправку в чат -5029209886
+2026-02-19 15:12:01 - ......Файл: E:\Программы\Pytnon projects\Parser1\stat\sbis_price_на_19.02.26.xlsx
+2026-02-19 15:12:01 - ......Комментарий: \u26a0\ufe0f Парсинг СБИС был отменен. Файл содержит неполные данные
+2026-02-19 15:12:01 - ......\u2713 Сообщение успешно отправлено в чат -5029209886, message_id: 1167
+2026-02-19 15:12:02 - ......\u2713 Файл E:\Программы\Pytnon projects\Parser1\stat\sbis_price_на_19.02.26.xlsx успешно отправлен в чат -5029209886, message_id: 1168
+2026-02-19 15:12:02 - ......Файл СБИС успешно отправлен в чат
+2026-02-19 15:12:02 - Update id=192499660 is handled. Duration 38437 ms by bot id=8579516206
+2026-02-19 15:12:09 - ......Загружено 90 регионов для Контур из конфига
+2026-02-19 15:14:11 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-02-19 15:14:11 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8579516206)
+2026-02-19 15:14:42 - Connection established (tryings = 1, bot id = 8579516206)
+2026-02-19 15:14:42 - Update id=192499663 is not handled. Duration 265 ms by bot id=8579516206
+2026-02-19 15:14:42 - Cause exception while process update id=192499663 by bot id=8579516206
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\Парсерсулучшеннымконфигом.py", line 156, in cancel_parsing_handler
+    await callback_query.answer("\u23f9 Парсинг отменяется...")
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Программы\Pytnon projects\Parser1\venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+2026-02-19 15:14:42 - ......Файл E:\Программы\Pytnon projects\Parser1\stat\kontur_price_на_19.02.26.xlsx создан, отправляем в чат
+2026-02-19 15:14:42 - ......Парсинг был отменен, отправляем неполный файл
+2026-02-19 15:14:42 - ......Начинаем отправку в чат -5029209886
+2026-02-19 15:14:42 - ......Файл: E:\Программы\Pytnon projects\Parser1\stat\kontur_price_на_19.02.26.xlsx
+2026-02-19 15:14:42 - ......Комментарий: \u26a0\ufe0f Парсинг Контур был отменен. Файл содержит неполные данные
+2026-02-19 15:14:42 - ......\u2713 Сообщение успешно отправлено в чат -5029209886, message_id: 1172
+2026-02-19 15:14:43 - ......\u2713 Файл E:\Программы\Pytnon projects\Parser1\stat\kontur_price_на_19.02.26.xlsx успешно отправлен в чат -5029209886, message_id: 1173
+2026-02-19 15:14:43 - ......Файл Контур успешно отправлен в чат
+2026-02-19 15:14:46 - Update id=192499662 is handled. Duration 157687 ms by bot id=8579516206
+2026-02-19 15:16:00 - Polling stopped
+2026-02-19 15:16:00 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-19 15:16:00 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8579516206)
+2026-02-19 15:16:00 - Polling stopped for bot @pazrssrbot id=8579516206 - '@Parbot1'

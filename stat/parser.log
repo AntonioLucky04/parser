@@ -1,0 +1,14 @@
+2025-12-04 23:34:52 - ________________________________________________
+2025-12-04 23:34:52 - *****СТАРТ программы 'Парсер цен СБИС и Контур'
+2025-12-04 23:34:52 - ......Прочитан конфигурационный файл E:\Программы\Pytnon projects\Parser1\config\config.toml
+2025-12-04 23:34:52 - Start polling
+2025-12-04 23:34:52 - Run polling for bot @pazrssrbot id=8579516206 - '@Parbot1'
+2025-12-04 23:36:50 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-12-04 23:36:50 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8579516206)
+2025-12-04 23:37:20 - Connection established (tryings = 1, bot id = 8579516206)
+2025-12-04 23:37:20 - Update id=192499208 is handled. Duration 187 ms by bot id=8579516206
+2025-12-04 23:37:23 - Update id=192499207 is handled. Duration 150483 ms by bot id=8579516206
+2025-12-04 23:38:17 - Polling stopped
+2025-12-04 23:38:17 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-04 23:38:17 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8579516206)
+2025-12-04 23:38:18 - Polling stopped for bot @pazrssrbot id=8579516206 - '@Parbot1'
